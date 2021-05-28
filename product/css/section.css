@@ -1,0 +1,142 @@
+.content{
+  width: 70%;
+}
+.content .navmenu .barmenu{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.content .navmenu .barmenu li{
+  margin: 35px;
+  margin-bottom: -35px;
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+.content .navmenu .barmenu li:hover{
+  color: #6A4029;
+  font-weight: 600;
+  border-bottom: 3px solid #6A4029;
+}
+.row{
+  display: grid;
+  margin-top: -50px;
+  margin-left: 120px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 190px);
+  grid-auto-rows: 250px;
+}
+.row .card{
+  margin-top: 200px;
+  position: relative;
+  width: 120px;
+  height: 180px;
+  text-align: center;
+  border-radius: 30px;
+  margin-right: 30px;
+  box-shadow: 1px 1px 10px #cccccc;
+  transition-duration: 55ms;
+  cursor: pointer;
+}
+.row .card:hover{
+  transform: scale(1.1);
+}
+.row .card img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  border-radius: 100px;
+}
+.row .card .disc{
+  background-color: white;
+  position: absolute;
+  padding: 10px 5px;
+  font-size: 25px;
+  width: 50px;
+  height: 16px;
+  top: -90px;
+  left: 80px;
+  border-radius: 20px;
+}
+.row .card p{
+  margin-top: 85px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+.row .card .harga{
+  margin-top: -10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 580;
+  font-size: 15px;
+  color: #6A4029;
+}
+.row .card .hargaveg{
+  margin-top: -15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 580;
+  font-size: 15px;
+  color: #6A4029;
+}
+.row .card .veggie{
+  margin-top: 70px;
+}
+.content .end{
+  color: #6A4029;
+  font-size: 15px;
+  margin: 90px 0 0 50px;
+  font-weight: 500;
+}
+@media screen and (max-width: 576px) {
+
+  .content{
+    width: 100%;
+  }
+  .content .navmenu{
+    width: 95%;
+    height: 60px;
+    margin-left: 5%;
+    overflow: scroll;
+  }
+  .content .navmenu .barmenu{
+    width: 600px;
+    text-align: center;
+    padding: 0;
+  }
+  .content .navmenu .barmenu li{
+    margin:0 20px 0 20px;
+  }
+  .content .navmenu .barmenu li:hover{
+    color: #6A4029;
+    font-weight: 600;
+    border-bottom: 3px solid #6A4029;
+  }
+  .row{
+    justify-content: start;
+    grid-template-columns: repeat(6,190px);
+    grid-template-rows: 250px 250px;
+    width: 95%;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 5%;
+    overflow: scroll;
+  }
+  .row .card{
+    margin: 20px 0 0 10px;
+  }
+  .content .end{
+    color: #6A4029;
+    font-size: 15px;
+    margin: 90px 0 0 50px;
+    font-weight: 500;
+    margin: 20px 0 0 30px;
+  }
+}

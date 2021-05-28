@@ -1,0 +1,75 @@
+nav{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -140px;
+    cursor: pointer;
+    transition-duration: 50ms;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo img{
+    width: 25px;
+    height: 25px;
+}
+.logo h1{
+    font-size: 15px;
+    font-weight: 800;
+    position: relative;
+    bottom: 0px;
+}
+.secondary-menu{
+    margin-left: 330px;
+    margin-right: -100px;
+}
+.secondary-menu .menu{
+    display: flex;
+    list-style-type: none;
+    margin: 15px;
+    margin-left: 0px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.secondary-menu .menu a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.login{
+    background-color: #ffba33;
+    padding: 10px 25px;
+    color: #6a4029;
+    border-radius: 100px;
+    transition-duration: 50ms;
+}
+.secondary-menu .menu .login:hover{
+    background-color: #6a4029;
+    font-weight: 700;
+    box-shadow: 1px 1px 10px #cccccc;
+    color: white;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 576px) {
+    nav{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .secondary-menu{
+        margin-left: 60px;
+        margin-right: 0;
+    }
+    .secondary-menu .menu{
+        margin: 15px;
+        margin-left: 0px;
+    }
+}
