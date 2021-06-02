@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Product</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<!-- my css -->
 <link rel="stylesheet" href="./css/navbar.css">
 <link rel="stylesheet" href="./css/aside.css">
 <link rel="stylesheet" href="./css/section.css">
 <link rel="stylesheet" href="./css/footer.css">
 </head>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <body>
-  <nav class="navbar">
-    <div class="icon">
-      <div class ="logo" onclick="window.location.href='file:C:/Users/F/Desktop/berkas%20bootcamp/latihan%20coding/HTML/week4/landingpage/landingpage.html'">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand coffeelogo" href="file:C:/Users/F/Desktop/berkas%20bootcamp/latihan%20coding/HTML/week5/landingpage/landingpage.html">
         <img src="https://s3-alpha-sig.figma.com/img/e8f1/50f4/dd316b36489ed2498bae94124e7ee124?Expires=1621814400&Signature=ZkzKxBHYHIIg-lfhhU1M3n6PGeN~LQJQjy09OjGqZROYnoMGQ~GCl~tS4yIGNJuRwOcauulbAJizjRGa~CjSoyeHgalKZ1kUtMOlTeVgynfw3A~LqXoGde52DRjRgPlnbflBTzGqDU4Ghlb-AKl75DH33JDR~WvTSgU6zc9-wLlHT~gBPlDemZo~6sams3yBHQ-Un9F~bIDDFDmM7pQyxRp1wRcQ~3lNHTkOxFQyuTRnREclS55MRp~z4NEAbGqilwNzKqEmb3pzSYxYR9TDgcazLADY4qZG7M18UF0Xq~GyZ6gzbauLiUY1X7S1a~iVVIwGsSMyrLEOQQdpFlD5mg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
         <h1>Coffee Shop</h1>
-      </div>
-      <div class="barmenu">
-        <img src="https://raw.githubusercontent.com/farizian/week4/master/img/barmenuu.png" alt="">
-      </div>
-    </div>
-    <div class="navmenu">
-      <div class="primary-menu">
-        <ul class="menu">
-          <li>
-            <a href="C:\Users\F\Desktop\berkas bootcamp\latihan coding\HTML\week4\landingpage\landingpage.html">Home</a>
+      </a>
+      <button class="navbar-toggler bar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon baricon"></span>
+      </button>
+      <div class="collapse navbar-collapse navmenu" id="navbarNav">
+        <ul class="navbar-nav primary-menu">
+          <li class="nav-item menu1">
+            <a class="nav-link active" aria-current="page" href="C:\Users\F\Desktop\berkas bootcamp\latihan coding\HTML\week5\landingpage\landingpage.html">Home</a>
           </li>
-          <li>
-            <a href="C:\Users\F\Desktop\berkas bootcamp\latihan coding\HTML\week4\product\produk2.html">Product</a> 
+          <li class="nav-item menu1">
+            <a class="nav-link active" href="C:\Users\F\Desktop\berkas bootcamp\latihan coding\HTML\week5\product\produk2.html">Product</a>
           </li>
-          <li>
-            <a href="">Your Cart</a> 
+          <li class="nav-item menu1">
+            <a class="nav-link active" href="#">Your Cart</a>
           </li>
-            <li>History</li>
+          <li class="nav-item menu1">
+            <a class="nav-link active" href="#" aria-disabled="true">History</a>
+          </li>
         </ul>
-      </div>
-      <div class="secondary-menu">
-        <ul class="menu">
-          <li class="search">
-            <img class="src" src="https://raw.githubusercontent.com/farizian/latihan-2/master/Coffee%20Shop%20-%20Arkademy/Vector.png" alt="" srcset="">
-            <input type="text" placeholder="Search" name="" value="">
-          </li>
-          <li class="chat">
-            <img src="https://s3-alpha-sig.figma.com/img/4433/8956/2ad3d1f2f1365930168ca73d05de1be1?Expires=1622419200&Signature=TuG8UBTHmkyf1aY5OLoeuEyYHgbhy27QE8lHgR9yEq9FH1VxkOrk~exjq7SVZ6LXZrZL-C33TZp85nlyi0oZCOXohG6bjti2RyBeewQjNR4qjAjx7SphPFuUsDLQJ0izx0pYYHorgvK~6MPqGbuk7y1V6cdcneptoj4N9EXgzeWaYu1VjvXbE4eP3OsW~Lh7QltHXTxk7K0CfvvPmHsGJ1ULpr59JnVRczh7ldJzUFfRALTPmVY0Qy~03EOE0tc3jQKRvKsOAkW8qsXNVK~7Lu3HegC~5ZJrHCR5RCKQQfNObEpOYSPR8oXryCsHn8MJ~lIF46HdqAj3X2mb-OBMkA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" width="20px", height="20px">          
-            <div class="notif">1</div>
-          </li>
-          <li class="profile">
-            <img src="https://github.com/farizian/latihan-2/blob/master/Coffee%20Shop%20-%20Arkademy/image%2039.png?raw=true" width="20" height="23">        
-          </li>
+        <ul class="navbar-nav secondary-menu">
+          <ul class="menu">
+            <li class="nav-item search">
+              <img class="srch" src="https://raw.githubusercontent.com/farizian/latihan-2/master/Coffee%20Shop%20-%20Arkademy/Vector.png" alt="srch" srcset="">
+              <input type="text" placeholder="Search" name="" value="">
+            </li>
+            <li class="nav-item chat">
+              <img src="https://s3-alpha-sig.figma.com/img/4433/8956/2ad3d1f2f1365930168ca73d05de1be1?Expires=1622419200&Signature=TuG8UBTHmkyf1aY5OLoeuEyYHgbhy27QE8lHgR9yEq9FH1VxkOrk~exjq7SVZ6LXZrZL-C33TZp85nlyi0oZCOXohG6bjti2RyBeewQjNR4qjAjx7SphPFuUsDLQJ0izx0pYYHorgvK~6MPqGbuk7y1V6cdcneptoj4N9EXgzeWaYu1VjvXbE4eP3OsW~Lh7QltHXTxk7K0CfvvPmHsGJ1ULpr59JnVRczh7ldJzUFfRALTPmVY0Qy~03EOE0tc3jQKRvKsOAkW8qsXNVK~7Lu3HegC~5ZJrHCR5RCKQQfNObEpOYSPR8oXryCsHn8MJ~lIF46HdqAj3X2mb-OBMkA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" width="20px", height="20px">
+              <div class="notif">1</div>
+            </li>
+            <li class="nav-item profile">
+              <img src="https://github.com/farizian/latihan-2/blob/master/Coffee%20Shop%20-%20Arkademy/image%2039.png?raw=true" width="20" height="23">
+            </li>
+          </ul>
         </ul>
       </div>
     </div>
@@ -59,53 +66,40 @@
           <h1>Promo Today</h1>
           <p>Coupons will be updated every weeks. Check them out!</p>
       </div>
-      <!-- card 1 -->
       <div class="content">
         <div class="promo">
-            <div class="card green">
-                <div class="image">
-                    <img src="https://s3-alpha-sig.figma.com/img/5272/76a9/8d88c62a29339c6f83f29e8f40c20178?Expires=1621814400&Signature=NXyCx-d2ziHjyHfMeztC5nU5iIOT1kkGq~jS4-D63Eem~tdqSdUVmdm~VqC54gOlDoeUcrmUZoA39BtmRSsvSRtYYGAigzBxmpAES6GZwHBYI~xpkapbpC9oWL9TwUU~XV8UWUL16VNVAsajT1qz9CnPQUbo4QGVb2FgxbDuO4aUkFqYPS6Z9bBTNVvbo1aDhLx7~1DcMgJcfkpziSe0XqWa2IihC55FR3KPUoTdyYMIar-EfyyEZ-OT32GDbZ0ktxqXtXHywjN-qqRGzqMaq35AKhCkAO5cbMbGrf8uDBFeR~WxofU4L25ys5K1ZRxfQhCpqmn2wA6b3BHm-ZKJtA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA
-                    " alt="" srcset="">
-                </div>
-                <div class="title">
-                    <strong>HAPPY MOTHER'S DAY!</strong>
-                    <p>Get one of our favorite menu free!</p>
-                </div>
+          <div class="prmcard green">
+            <img class="image" src="https://s3-alpha-sig.figma.com/img/5272/76a9/8d88c62a29339c6f83f29e8f40c20178?Expires=1621814400&Signature=NXyCx-d2ziHjyHfMeztC5nU5iIOT1kkGq~jS4-D63Eem~tdqSdUVmdm~VqC54gOlDoeUcrmUZoA39BtmRSsvSRtYYGAigzBxmpAES6GZwHBYI~xpkapbpC9oWL9TwUU~XV8UWUL16VNVAsajT1qz9CnPQUbo4QGVb2FgxbDuO4aUkFqYPS6Z9bBTNVvbo1aDhLx7~1DcMgJcfkpziSe0XqWa2IihC55FR3KPUoTdyYMIar-EfyyEZ-OT32GDbZ0ktxqXtXHywjN-qqRGzqMaq35AKhCkAO5cbMbGrf8uDBFeR~WxofU4L25ys5K1ZRxfQhCpqmn2wA6b3BHm-ZKJtA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA
+            " alt="" srcset="">
+            <div class="title">
+              <strong>HAPPY MOTHER'S DAY!</strong>
+              <p>Get one of our favorite menu free!</p>
             </div>
-            <!-- card2 -->
-            <div class="card yellow">
-                <div class="image">
-                    <img src="https://s3-alpha-sig.figma.com/img/ed87/b600/bcd624c9cdfab5f48a586cfe014785b0?Expires=1621814400&Signature=H4cNwJqjbPLqDzL2gq8j8U4jX35J49QXHQ2hNocIQ5zLX-cPpzhmK1L1nh7UBXXRHoNZ9u0PMrRXTA5Y0a1iOEcML5FrWzIo092CiwgUOxj4Pb-~4hXMo~QVlmOrUKhZSeiVHR0OEAnlKKiGlnadsew~0nnJIRQxadPy5uOgAwYCYXOhJcF-EC~ae~NnBa2ZkEb8kbCzf0TqecQGm0DVuVmmY-J0L-ZwhhlRb43Uf-Y25BYD79~vJC4CxH1xPBPu3GvWfRI9b3md0svjo~z~OfGm4Mb4pEWpZzlWXox~Zt5ZbQZR6z9FnncdRa~TreFi~qmOeY5cb5OHuf0SO1Lz1g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA
-                    " alt="" srcset="">
-                </div>
-                <div class="title">
-                    <strong>Get a cup of coffee for free on sunday morning</strong>
-                    <p>Only at 7 to 9 AM</p>
-                </div>
-            </div>
-            <!-- card3 -->
-            <div class="card green">
-                <div class="image">
-                    <img src="https://s3-alpha-sig.figma.com/img/5272/76a9/8d88c62a29339c6f83f29e8f40c20178?Expires=1621814400&Signature=NXyCx-d2ziHjyHfMeztC5nU5iIOT1kkGq~jS4-D63Eem~tdqSdUVmdm~VqC54gOlDoeUcrmUZoA39BtmRSsvSRtYYGAigzBxmpAES6GZwHBYI~xpkapbpC9oWL9TwUU~XV8UWUL16VNVAsajT1qz9CnPQUbo4QGVb2FgxbDuO4aUkFqYPS6Z9bBTNVvbo1aDhLx7~1DcMgJcfkpziSe0XqWa2IihC55FR3KPUoTdyYMIar-EfyyEZ-OT32GDbZ0ktxqXtXHywjN-qqRGzqMaq35AKhCkAO5cbMbGrf8uDBFeR~WxofU4L25ys5K1ZRxfQhCpqmn2wA6b3BHm-ZKJtA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA
-                    " alt="" srcset="">
-                </div>
-                <div class="title">
-                    <strong>HAPPY MOTHER'S DAY!</strong>
-                    <p>Get one of our favorite menu free!</p>
-                </div>
-            </div>
-            <!-- card4 -->
-            <div class="card red">
-                <div class="image">
-                    <img src="https://s3-alpha-sig.figma.com/img/e25b/8a97/346f786692a9f23c7fc959db9981ae5c?Expires=1621814400&Signature=Pf2YczmwG2BCfrV3VCzc1lrH52G8JFGY42EbIvMcNzVGMHBHi-0Jx4LPgRyLD7TFjmynYtsj0h3gQ-gIOWhhRAJSzo5D-aKYnXFvps6IOF6YInJ6Urwv97g8n9vI9U-O0Pi895i8xnOd9928EdkA~Wa53afBjGa~-lWw8Jep8G1ogBWxGxmTWOBZQBn0mjJvoIIrdj8HWXr~gMjDKiDlCFz4oI2f8npUn5A47gu9D3dW0kHPaTDyH6NI1olJfM2veGgeL7CErpW~7I59GC3Ykg5256pt56t4DD9Wx0Un3Q3c2CkZzcp7PNLS0AiRIIfr22GRhGSdbSheaVsVSeCQsA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA
-                    " alt="" srcset="">
-                </div>
-                <div class="title">
-                    <strong>HAPPY MOTHER'S DAY!</strong>
-                    <p>Get one of our favorite menu free!</p>
-                </div>
-            </div>
-
+          </div>
+          <div class="prmcard yellow">
+              <img class="image" src="https://s3-alpha-sig.figma.com/img/ed87/b600/bcd624c9cdfab5f48a586cfe014785b0?Expires=1621814400&Signature=H4cNwJqjbPLqDzL2gq8j8U4jX35J49QXHQ2hNocIQ5zLX-cPpzhmK1L1nh7UBXXRHoNZ9u0PMrRXTA5Y0a1iOEcML5FrWzIo092CiwgUOxj4Pb-~4hXMo~QVlmOrUKhZSeiVHR0OEAnlKKiGlnadsew~0nnJIRQxadPy5uOgAwYCYXOhJcF-EC~ae~NnBa2ZkEb8kbCzf0TqecQGm0DVuVmmY-J0L-ZwhhlRb43Uf-Y25BYD79~vJC4CxH1xPBPu3GvWfRI9b3md0svjo~z~OfGm4Mb4pEWpZzlWXox~Zt5ZbQZR6z9FnncdRa~TreFi~qmOeY5cb5OHuf0SO1Lz1g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA
+              " alt="" srcset="">
+              <div class="title">
+                  <strong>Get a cup of coffee for free on sunday morning</strong>
+                  <p>Only at 7 to 9 AM</p>
+              </div>
+          </div>
+          <div class="prmcard green">
+              <img class="image" src="https://s3-alpha-sig.figma.com/img/5272/76a9/8d88c62a29339c6f83f29e8f40c20178?Expires=1621814400&Signature=NXyCx-d2ziHjyHfMeztC5nU5iIOT1kkGq~jS4-D63Eem~tdqSdUVmdm~VqC54gOlDoeUcrmUZoA39BtmRSsvSRtYYGAigzBxmpAES6GZwHBYI~xpkapbpC9oWL9TwUU~XV8UWUL16VNVAsajT1qz9CnPQUbo4QGVb2FgxbDuO4aUkFqYPS6Z9bBTNVvbo1aDhLx7~1DcMgJcfkpziSe0XqWa2IihC55FR3KPUoTdyYMIar-EfyyEZ-OT32GDbZ0ktxqXtXHywjN-qqRGzqMaq35AKhCkAO5cbMbGrf8uDBFeR~WxofU4L25ys5K1ZRxfQhCpqmn2wA6b3BHm-ZKJtA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA
+              " alt="" srcset="">
+              <div class="title">
+                  <strong>HAPPY MOTHER'S DAY!</strong>
+                  <p>Get one of our favorite menu free!</p>
+              </div>
+          </div>
+          <div class="prmcard red">
+              <img class="image" src="https://s3-alpha-sig.figma.com/img/e25b/8a97/346f786692a9f23c7fc959db9981ae5c?Expires=1621814400&Signature=Pf2YczmwG2BCfrV3VCzc1lrH52G8JFGY42EbIvMcNzVGMHBHi-0Jx4LPgRyLD7TFjmynYtsj0h3gQ-gIOWhhRAJSzo5D-aKYnXFvps6IOF6YInJ6Urwv97g8n9vI9U-O0Pi895i8xnOd9928EdkA~Wa53afBjGa~-lWw8Jep8G1ogBWxGxmTWOBZQBn0mjJvoIIrdj8HWXr~gMjDKiDlCFz4oI2f8npUn5A47gu9D3dW0kHPaTDyH6NI1olJfM2veGgeL7CErpW~7I59GC3Ykg5256pt56t4DD9Wx0Un3Q3c2CkZzcp7PNLS0AiRIIfr22GRhGSdbSheaVsVSeCQsA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA
+              " alt="" srcset="">
+              <div class="title">
+                  <strong>HAPPY MOTHER'S DAY!</strong>
+                  <p>Get one of our favorite menu free!</p>
+              </div>
+          </div>
         </div>
         <div class="action">
                 <button class="btn">Apply Coupon</button>
@@ -121,7 +115,7 @@
           </ol>
       </div>
     </aside>
-    <section class="content">
+    <section class="product">
       <nav class="navmenu">
         <ul class="barmenu">
           <li>Favorite & Promo</li>
@@ -199,9 +193,9 @@
             <p class="disc">10%</p>
             <p>Creamy Ice Latte</p>
             <p class="harga">IDR 27.000 </p>
-          </div>  
+          </div>
       </div>
-      <p class="end">*the price has been cutted by discount appears</p>         
+      <p class="end">*the price has been cutted by discount appears</p>
     </section>
   </main>
   
@@ -213,9 +207,9 @@
       </div>
       <p>Coffee Shop is a store that sells some good<br> meals, and especially coffee. We provide</br>high quality beans</p>
       <div class="social">
-        <img src="https://raw.githubusercontent.com/farizian/week4/master/img/Facebook.png" alt="">
-        <img src="https://raw.githubusercontent.com/farizian/week4/master/img/Twitter.png" alt="">
-        <img src="https://raw.githubusercontent.com/farizian/week4/master/img/Instagram.png" alt="">
+        <img src="https://raw.githubusercontent.com/farizian/week5/master/img/Facebook.png" alt="">
+        <img src="https://raw.githubusercontent.com/farizian/week5/master/img/Twitter.png" alt="">
+        <img src="https://raw.githubusercontent.com/farizian/week5/master/img/Instagram.png" alt="">
       </div>
       <p class="credit">©2020CoffeeStore</p>
     </div>

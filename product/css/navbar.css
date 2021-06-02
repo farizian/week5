@@ -3,136 +3,132 @@
 body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: poppins;
 }
 
 .navbar{
-    width: 100%;
-    background-color: #ffffff;
     display: flex;
     border-bottom: 2px solid #eeeeee;
-    padding-left: 2%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-.navbar.icon{
-    width: 20%;
-    margin-top: 0;
-    margin-left: 30%
+.bar{
+    background-color: #ffba33 !important;
 }
-.navbar .logo{
+.bar .baricon{
+    color: #6a4029 !important;
+}
+.coffeelogo{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-right: 40px;
-    padding-left: 30px;
-    padding: 38px 40px 0 30px;
     cursor: pointer;
-    transition-duration: 50px;
+    transition-duration: 50ms;
+    margin-left: 7%;
 }
-.navbar .logo:hover{
+.coffeelogo:hover{
     font-weight: 600;
     transform: scale(1.1);
 }
-.navbar .logo img{
+.coffeelogo img{
     width: 25px;
     height: 25px;
 }
-.navbar .logo h1{
+.coffeelogo h1{
     font-size: 15px;
     font-weight: 800;
     position: relative;
     left: 11px;
-    margin-top: 2px;
-}
-.navbar .barmenu img{
-    display: none;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-    transition-duration: 50px;
-}
-.navbar .barmenu img:hover{
-    transform: scale(1.1);
+    margin-top: 7px;
+    color: #6a4029 !important;
 }
 .navbar .navmenu{
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
     width: 80%;
+    justify-content: center;
 }
 .navbar .navmenu .primary-menu{
-    width: 50%;
-    margin-left: 5%;
-    margin-right: 10%;
-}
-.navbar .navmenu .primary-menu .menu{
-    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 5px 0 0 100px;
     align-items: center;
     list-style-type: none;
+    margin-left: 15%;
+    width: 400px;
 }
-.navbar .navmenu .primary-menu .menu li{
-    margin:20px 15px 15px 15px;
+.navbar .navmenu .primary-menu .menu1{
+    margin: 15px 0 15px 0;
     font-size: 13px;
     font-weight: 400;
     color: #4f5665;
     cursor: pointer;
+    text-align: center;
+    width: 100%;
 }
-.navbar .navmenu .primary-menu .menu li a{
-    text-decoration: none;
-    color: inherit;
-}
-.navbar .navmenu .primary-menu .menu li:hover{
+.navbar .navmenu .primary-menu .menu1:hover{
     color: #6a4029;
     font-weight: 700;
 }
 .navbar .secondary-menu{
     width: 40%;
-    justify-content: flex-end;
-    margin-right: -5%;
-    padding: 0;
 }
 .navbar .secondary-menu .menu{
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     list-style-type: none;
-    margin-top: 15px;
-    padding-left: 10%;
+    margin-left: 20%;
 }
-.navbar .secondary-menu .menu li{
-    margin: 25px 15px 15px 15px;
+.navbar .secondary-menu .menu .search{
+    width: 40%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     font-size: 13px;
     cursor: pointer;
+    background-color: #EFEEEE;
+    border-radius: 20px;
+    margin-right: 6%;
 }
-input{
+.navbar .secondary-menu .menu .search input{
     border: none;
     background-color: #EFEEEE;
-    width: 80px;
+    width: 90%;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
-    margin-top: -24px;
-    border-radius: 20px;
-    padding: 0 39px;
+    padding: 0 10px;
     font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
 }
-.menu li .src{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
-    margin-left: 10px;
+.navbar .secondary-menu .menu .search .srch{
+    margin-left: 5%;
+    width: 15px;
+    height: 15px;
 }
-.menu .chat:hover{
+.navbar .secondary-menu .menu .chat{
+    height: 30px;
+    width: 35px;
+    padding: 5px;
+    margin-right: 5%;
+}
+.navbar .secondary-menu .menu .chat img{
+    margin-left: 2px;
+}
+.navbar .secondary-menu .menu .chat:hover{
     font-weight: 600;
     transform: scale(1.1);
 }
-.menu .profile:hover{
+.navbar .secondary-menu .menu .profile:hover{
     font-weight: 600;
     transform: scale(1.1);
 }
-.notif{
+.navbar .secondary-menu .menu .chat .notif{
     background-color: #6A4029;
     width: 12px;
     height: 12px;
@@ -141,98 +137,116 @@ input{
     font-size: 10px;
     font-weight: 800;
     font-family: sans-serif;
-    margin-top: -30px;
-    margin-left: -6px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -28px;
+    margin-left: -5px;
 }
-@media screen and (max-width: 1000px) {
-
+@media screen and (max-width: 768px){
     .navbar{
+        display: flex;
+        border-bottom: 2px solid #eeeeee;
         width: 100%;
-        padding-top: 0;
-        padding-left: 0%;
+        margin: 0;
+        padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .navbar .container-fluid{
+        margin: 0;
+        padding: 0;
+    }
+    .bar{
+        background-color: #ffba33 !important;
+        margin-right: 5%;
+    }
+    .bar .baricon{
+        color: #6a4029 !important;
+    }
+    .coffeelogo{
         display: flex;
-        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        cursor: pointer;
+        transition-duration: 50ms;
+        margin-left: 7%;
     }
-    .navbar .icon{
-        width: 100%;
-        margin-bottom: 0;
-        display: flex;
-        border-bottom: 2px solid rgb(172, 170, 170);
-        align-items: center;
+    .coffeelogo:hover{
+        font-weight: 600;
+        transform: scale(1.1);
     }
-    .navbar .icon .logo {
-        width: 60%;
-        padding-left: 5%;
-        margin-top: -25px;
+    .coffeelogo img{
+        width: 25px;
+        height: 25px;
     }
-    .navbar .barmenu{
-        width: 40%;
-        margin-right: 7%;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .navbar .barmenu img{
-        display: block;
+    .coffeelogo h1{
+        font-size: 15px;
+        font-weight: 800;
+        position: relative;
+        left: 11px;
+        margin-top: 7px;
+        color: #6a4029 !important;
     }
     .navbar .navmenu{
-        display: none;
-    }
-    .navbar:hover .navmenu{
+        margin: 0;
+        padding: 0;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+        margin-top: 10px;
     }
     .navbar .navmenu .primary-menu{
-        width: 100%;
-        margin-right: 5%;
-        margin-top: -16px;
-    }
-    .navbar .navmenu .primary-menu .menu {
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin-left: 0;
         width: 100%;
         display: grid;
         align-items: center;
-        margin-left: -15px;
-        padding-left: 0;
         justify-self: start;
         grid-row-gap: 10px;
         grid-template-columns: 50% 50%;
         grid-template-rows: 30px 30px;
     }
-    .navbar .navmenu .primary-menu .menu li{
-        padding-left: 10px;
-        margin-top: 25px;
-    }
-    .navbar .navmenu .primary-menu .menu li:hover{
-        background-color: #ffba33;
+    .navbar .navmenu .primary-menu .menu1{
+        margin: 0;
+        font-size: 13px;
+        font-weight: 400;
+        color: #4f5665;
+        cursor: pointer;
         text-align: left;
         width: 100%;
-        height: 40px;
-        padding-top: 10px;
+    }
+    .navbar .navmenu .primary-menu .menu1:hover{
+        color: #6a4029;
+        font-weight: 700;
+        background-color: #ffba33;
+    }
+    .navbar .navmenu .primary-menu .menu1 a{
+        margin-left: 50px;
     }
     .navbar .navmenu .secondary-menu{
         width: 100%;
         height: 50px;
-        margin-right: 20%;
+        padding-left: 10%;
         justify-content: flex-start;
     }
     .navbar .navmenu .secondary-menu .menu{
-        margin-top: -10px;
+        margin-top: 10px;
+        margin-left: 0;
     }
     .navbar .navmenu .secondary-menu .menu .search{
-        margin-left: 10%;
+        width: 60%;
     }
     .navbar .navmenu .secondary-menu .menu .search input{
         width: 100%;
     }
-    .navbar .navmenu .secondary-menu .menu .chat{
-        display: none;
+}
+@media screen and (max-width: 576px) {
+    .navbar .navmenu .primary-menu .menu1 a{
+        margin-left: 10px;
     }
-    .navbar .navmenu .secondary-menu .menu .profile{
-        display: none;
+    .navbar .navmenu .secondary-menu{
+        padding-left: 0;
     }
 }

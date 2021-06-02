@@ -29,7 +29,7 @@ form{
     margin-bottom: 10px;
 }
 .textbox input{
-    box-sizing: border-box ; 
+    box-sizing: border-box ;
     height: 60px;
     font-size: 20px;
     width: 505px;
@@ -142,7 +142,84 @@ img{
     transform: scale(1.1);
 }
 
-
+@media screen and (max-width: 768px) {
+    section{
+        width: 70%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    form{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .signbox{
+        width: 80%;
+        padding: 5px;
+    }
+    .textbox input{
+        height: 60px;
+        width: 100%;
+    }
+    .btn button{
+        margin-bottom: 30px;
+        border: none;
+    }
+    .buttonsign .btn{
+        width: 80%;
+    }
+    .btn .signup{
+        background-color: #ffba33;
+        width: 100%;
+        height: 60px;
+    }
+    .btn .googlebtn{
+        background-color: white;
+        width: 100%;
+        height: 60px;
+    }
+    .container{
+        background-color: white;
+        width: 90%;
+        height: 130px;
+        position: absolute;
+        margin-left: 5%;
+        margin-top: -50px;
+        border-radius: 10px;
+        box-shadow: 0 1px 5px rgba(63, 61, 61, 0.445);
+        display: flex;
+    }
+    .container .row-card{
+        width: 70%;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .container .row-card p{
+        width: 100%;
+        font-size: 3vw;
+        padding-left: 0;
+    }
+    .container .row-card .let{
+        width: 100%;
+        color: #4F5665;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: -20px;
+    }
+    .container .btnpromo{
+        margin: 40px 20px 0 0;
+        width: 30%;
+        height: 50px;
+        background-color: #ffba33;
+        border-radius: 10px;
+    }
+    .container .btnpromo .btn{
+        text-decoration: none;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+    
+}
 @media screen and (max-width: 576px) {
     section{
         width: 100%;

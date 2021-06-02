@@ -89,6 +89,10 @@ body{
     height: 18px;
     margin: 6px 0 0 10px;
 }
+.infocard .row{
+    justify-content: center;
+    display: flex;
+}
 .infocard{
     background-color: white;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
@@ -96,15 +100,15 @@ body{
     margin-top: -70px;
     padding: 30px;
     height: 130px;
-    z-index: 1;
 }
 .infocard .info{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-    margin-right: -20px;
     border-right: 2px solid #EEEFF2;
+    margin: 0 2% 0 0;
+    width: 30%;
 }
 .infocard .info .text h4{
     font-size: 17px;
@@ -125,7 +129,7 @@ body{
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-    margin-right: -20px;
+    width: 30%;
 }
 .infocard .info2 .text h4{
     font-size: 17px;
@@ -147,21 +151,22 @@ body{
 .part2{
     display: flex;
     margin-top: 100px;
+    width: 100%;
 }
 .part2 aside{
-    width: 60%;
+    width: 50%;
 }
 .part2 aside img{
-    width: 573px;
+    width: 100%;
     height: 457px;
 }
 .part2 section{
-    width: 40%;
+    width: 50%;
     margin-top: 50px;
     font-size: 16px;
 }
 .part2 section .text{
-    margin-left: -40px;
+    margin-left: 2%;
 }
 .part2 section h2{
     font-size: 35px;
@@ -173,14 +178,14 @@ body{
     list-style-type: none;
     font-size: 14px;
     margin-bottom: 15px;
-    margin-left: -66px;
     padding-top: 5px;
+    margin-left: -7%;
 }
 .part2 section ul img{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    margin-left: -70px;
+    margin-left: -90%;
 }
 .part2 section ul img{
     margin-top: 6px;
@@ -208,7 +213,8 @@ body{
 }
 .favorite .row{
     display: flex;
-    margin-left: 85px;
+    padding-left: 11%;
+    width: 100%;
 }
 .favorite .row .card{
     margin-top: 200px;
@@ -312,7 +318,7 @@ body{
     color: #4F5665;
 }
 .map img{
-    width: 1000px;
+    width: 80%;
     height: 500px;
     margin-top: 180px;
 }
@@ -355,7 +361,7 @@ body{
     text-align: center;
     background-color: #fafafa;
     width: 100%;
-    height: 100vh;
+    height: 30vh;
     margin-bottom: 500px;
     margin-top: -150px;
 }
@@ -374,119 +380,253 @@ body{
     color: #4F5665;
     margin-bottom: 80px;
 }
-.container-card{
+.review .row{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 95%;
+    height: 260px;
     font-family: rubik;
-    margin-left: 50px;
+    margin-left: 5%;
+    padding: 10px 0 0 0;
+    overflow: scroll;
 }
-.container-card .card{
-    width: 400px;
+.review .row .card{
+    width: 500px;
     height: 230px;
     border-radius: 10px;
-    margin-right: 40px;
+    margin-right: 5%;
 }
-.container-card .card .row1{
+.review .row .card .row1{
+    width: 100%;
     display: flex;
     padding: 30px 25px 0 25px;
 }
-.container-card .card .row1 .profile{
+.review .row .card .row1 .profile{
     width: 40px;
     height: 40px;
     border-radius: 100px;
 }
-.container-card .card .row1 .header{
+.review .row .card .row1 .header{
     margin-left: 20px;
     text-align: left;
 }
-.container-card .card .row1 .header h1{
+.review .row .card .row1 .header h1{
     margin-bottom: 0px;
     font-size: 18px;
     font-weight: 600;
     color: #0B132A;
     margin-right: 90px;
 }
-.container-card .card .row1 .header p{
+.review .row .card .row1 .header p{
     font-size: 14px;
     font-weight: 400;
     color: #4F5665;
 }
-.container-card .card .row1 .rating{
+.review .row .card .row1 .rating{
     display: flex;
+    margin-left: 20%;
 }
-.container-card .card .row1 .rating img{
+.review .row .card .row1 .rating img{
     width: 13px;
     height: 12px;
     margin-top: 5px;
     margin-left: 15px;
 }
-.container-card .card .text{
+.review .row .card .text{
     font-size: 16px;
     font-weight: 400;
     text-align: left;
-    padding-left: 20px;
+    padding: 20px;
     margin-top: -10px;
     line-height: 30px;
     color: #0B132A;
+    width: 100%;
 }
-.container-card .card .text2{
+.review .row .card .text2{
     font-size: 16px;
     font-weight: 400;
     text-align: left;
-    padding-left: 20px;
+    padding: 10px 10px 10px 20px;
     margin-top: -10px;
     line-height: 30px;
     color: #0B132A;
+    width: 100%;
 }
 .promocard{
     width: 100%;
-    height: 200px;
-    background-color: #fafafa;
-    margin-top: -500px;
-    padding-top: 200px;
 }
-.con-row{
-    background-color: white;
-    width: 75%;
-    height: 200px;
-    position: absolute;
-    margin-left: 145px;
-    margin-top: -100px;
+.promocard .promo{
+    margin-bottom: -8%;
+}
+.promocard .promo .card{
+    height: 233px;
     border-radius: 10px;
-    box-shadow: 0 1px 5px rgba(63, 61, 61, 0.445);
+}
+.promocard .promo .card .card-body{
     display: flex;
-}
-.con-row .row-card p{
-    color: #0B132A;
-    font-size: 30px;
-    font-weight: 600;
-    padding-left: 60px;
-    padding-top: 30px;
-}
-.con-row .row-card .let{
-    color: #4F5665;
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: -25px;
-}
-.con-row .btn{
-    text-decoration: none;
-    background-color: #ffba33;
-    padding: 25px 100px;
-    color: #6a4029;
     border-radius: 10px;
-    font-weight: bolder;
 }
-.con-row ul .btn:hover{
-    transform: scale(1.1);
+.promocard .promo .card .card-body .title{
+    width: 60%;
+    padding: 3% 0 0 5%;
 }
-.con-row ul{
-    padding-left: 280px;
-    padding-top: 7%;
-    transition-duration: 55ms;
+.promocard .promo .card .card-body .title .card-title{
+    font-size: 3vw;
+    font-family: rubik;
+    font-weight: 500;
+}
+.promocard .promo .card .card-body .title .card-text{
+    font-size: 1.2vw;
+    font-family: rubik;
+    font-weight: 400;
+}
+.promocard .promo .card .card-body .btnpromo{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.promocard .promo .card .card-body .btnpromo .btn{
+    width: 60%;
+    height: 30%;
+    margin-left: 15%;
+    border-radius: 10px;
+    padding-top: 17px;
+    font-size: 16px;
+    font-family: rubik;
+    font-weight: 700;
+    background-color: #ffba33;
+    color: #6A4029;
     cursor: pointer;
 }
+.promocard .promo .card .card-body .btnpromo .btn:hover{
+    transform: scale(1.1);
+}
 
+@media screen and (max-width: 768px) {
+    .jumbotron .left{
+        width: 100%;
+    }
+    .right{
+        display: none;
+    }
+    .jumbotron .left .searchbar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .jumbotron .left .searchbtn{
+        width: 65%;
+        padding: 5px;
+        margin: 20px 0 0 0;
+    }
+    .jumbotron .display-4{
+        font-size: 6vw;
+        padding: 30px 20% 0 40px;
+        width: 100%;
+        margin: 0;
+    }
+    .lead{
+        padding: 0 50px 0 42px;
+        width: 100%;
+        margin: 5px 0 0 0;
+        font-size: 3vw;
+        font-weight: 550;
+    }
+    .jumbotron .btn {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 10px;
+        margin: 40px 5% 0 0;
+    }
+    .jumbotron .right{
+     display: none;
+    }
+    .favorite{
+        text-align: center;
+        background-color: #fafafa;
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+    }
+    .favorite .text{
+        margin: 0 20px 0 20px;
+    }
+    .favorite .row{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 5%;
+        margin-right: 0;
+        padding-left: 0;
+        width: 90%;
+        height: 750px;
+        overflow: scroll;
+    }
+    .favorite .row .card{
+        margin-top: 120px;
+        margin: 120px 0 0 0;
+        width: 320px;
+        height: 560px;
+        text-align: center;
+        border-radius: 10px;
+        margin-right: 50px;
+        box-shadow: 1px 1px 10px #cccccc;
+        transition-duration: 55ms;
+        cursor: pointer;
+    }
+    .review{
+        height: 20vh;
+    }
+
+    .promocard{
+        width: 100%;
+    }
+    .promocard .promo{
+        margin-bottom: -12%;
+    }
+    .promocard .promo .card{
+        height: 190px;
+    }
+    .promocard .promo .card .card-body{
+        display: flex;
+    }
+    .promocard .promo .card .card-body .title{
+        width: 60%;
+        padding: 5% 0 0 5%;
+    }
+    .promocard .promo .card .card-body .title .card-title{
+        font-size: 3vw;
+        font-family: rubik;
+        font-weight: 500;
+    }
+    .promocard .promo .card .card-body .title .card-text{
+        font-size: 1.2vw;
+        font-family: rubik;
+        font-weight: 400;
+    }
+    .promocard .promo .card .card-body .btnpromo{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .promocard .promo .card .card-body .btnpromo .btn{
+        width: 60%;
+        height: 30%;
+        margin-left: 15%;
+        border-radius: 10px;
+        padding-top: 10px;
+        font-size: 16px;
+        font-family: rubik;
+        font-weight: 700;
+        background-color: #ffba33;
+        color: #6A4029;
+        cursor: pointer;
+    }
+    .promocard .promo .card .card-body .btnpromo .btn:hover{
+        transform: scale(1.1);
+    }
+}
 @media  screen and (max-width: 576px) {
     .jumbotron{
         background-image: url(https://s3-alpha-sig.figma.com/img/57c5/d504/de26c540ca74fd712a0e636cd4cdc0fb?Expires=1621814400&Signature=fZMx8FNLoRZvg-DGi9MFekxJyW6PCk-QiA2kBDcOK0~rrYtN6I8o9bMEtPda5MhyhUbon5CnbzDqD41tbQtb50EpJeg9-WNYEYn1dzlnKsxeZoElib3GuVm76rw6wM9AMkZmEqnagWVKLzqeL8nnWFq8mZNX2uRZUix2QfaUj~Xtz6p3foXLfZreBOBOycrDjPVW--dY41JKos5er0jqgTKGOU0iz0tjVn4pTdVLy9Ev4~ZvSjvBQQ8zHFVZ4~P~WprtbgN~KzR3nuakXS8jOjbSa6y3mXPZmLJ4eav5YstgtWIdgtPQPqLdikBKuOPl63d8aslXcPS7cIls82feyA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
@@ -536,19 +676,21 @@ body{
         font-weight: 700;
         padding: 30px 20% 0 40px;
         width: 100%;
-        margin: 20px 10% 0 20px;
+        margin: 50px 0 0 0;
         line-height: normal;
     }
     .lead{
-        padding: 0 50px 0 50px;
+        padding: 0 50px 0 42px;
         width: 100%;
-        margin: 10px 10% 0 10px;
+        margin: 5px 0 0 0;
         font-size: 3vw;
         font-weight: 550;
     }
     .jumbotron .btn {
-        padding: 10px 10px;
-        margin: 60px 10px 0 10px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 50px 0 0 0;
     }
     .jumbotron .right{
      display: none;
@@ -720,7 +862,7 @@ body{
         padding-top: 100px;
     }
     .map img{
-        width: 90%;
+        width: 80%;
         height: 200px;
         margin-top: 80px;
     }
@@ -775,23 +917,6 @@ body{
     .partner .image .netflix{
         height: 150px;
         width: 200px;
-    }
-    .review{
-        text-align: center;
-        background-color: #fafafa;
-        width: 100%;
-        height: 100vh;
-        margin-bottom: 500px;
-        margin-top: -400px;
-    }
-    .review .text{
-        font-family: rubik;
-    }
-    .review .text h1{
-        margin: 0 10px 0 10px;
-    }
-    .review .text p{
-        margin: 30px 20px 80px 20px;
     }
     .review{
     display: none;

@@ -56,6 +56,23 @@ nav{
     color: white;
     transform: scale(1.1);
 }
+@media screen and (max-width: 768px) {
+    nav{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .secondary-menu{
+        margin-left: 40%;
+        margin-right: 0;
+    }
+    .secondary-menu .menu{
+        margin: 15px;
+        margin-left: 0px;
+    }
+}
 @media screen and (max-width: 576px) {
     nav{
         width: 100%;

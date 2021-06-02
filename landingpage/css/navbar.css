@@ -1,195 +1,220 @@
 .navbar{
-    width: 100%;
-    background-color: #ffffff;
     display: flex;
     border-bottom: 2px solid #eeeeee;
-    padding-left: 2%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-.navbar.icon{
-    width: 20%;
-    margin-top: 0;
-    margin-left: 30%;
-    margin-right: 100px;
-
+.bar{
+    background-color: #ffba33 !important;
 }
-.navbar .logo{
+.bar .baricon{
+    color: #6a4029 !important;
+}
+.coffeelogo{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-right: 40px;
-    padding-left: 30px;
     cursor: pointer;
-    transition-duration: 50px;
+    transition-duration: 50ms;
+    margin-left: 7%;
 }
-.navbar .logo:hover{
+.coffeelogo:hover{
     font-weight: 600;
     transform: scale(1.1);
 }
-.navbar .logo img{
+.coffeelogo img{
     width: 25px;
     height: 25px;
 }
-.navbar .logo h1{
+.coffeelogo h1{
     font-size: 15px;
     font-weight: 800;
     position: relative;
     left: 11px;
     margin-top: 7px;
-}
-.navbar .barmenu img{
-    display: none;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-    transition-duration: 50px;
-}
-.navbar .barmenu img:hover{
-    transform: scale(1.1);
+    color: #6a4029 !important;
 }
 .navbar .navmenu{
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
     width: 80%;
+    justify-content: center;
 }
 .navbar .navmenu .primary-menu{
-    width: 50%;
-    margin-left: 5%;
-    margin-right: 10%;
-}
-.navbar .navmenu .primary-menu .menu{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
     list-style-type: none;
+    margin-left: 15%;
+    width: 400px;
 }
-.navbar .navmenu .primary-menu .menu li{
-    margin: 15px;
-    margin-top: 20px;
+.navbar .navmenu .primary-menu .menu1{
+    margin: 15px 0 15px 0;
     font-size: 13px;
     font-weight: 400;
     color: #4f5665;
     cursor: pointer;
+    text-align: center;
+    width: 100%;
 }
-.navbar .navmenu .primary-menu .menu li a{
-    text-decoration: none;
-    color: inherit;
-}
-.navbar .navmenu .primary-menu .menu li:hover{
+.navbar .navmenu .primary-menu .menu1:hover{
     color: #6a4029;
     font-weight: 700;
 }
-.navbar .navmenu .secondary-menu{
-    width: 30%;
-    margin-right: -5%;
-}
-.navbar .navmenu .secondary-menu .menu{
+.navbar .navmenu .secondary-menu {
     display: flex;
     list-style-type: none;
-    margin-top: 10px;
-    padding-left: 10%;
+    margin-left: 20%;
+    margin-right: 5%;
 }
-.navbar .navmenu .secondary-menu .menu li{
-    margin:25px 15px 15px 15px;
+.navbar .navmenu .secondary-menu .menu2{
     font-size: 13px;
     cursor: pointer;
-}
-.navbar .navmenu .secondary-menu .menu li a{
     text-decoration: none;
     font-weight: 600;
 }
-.navbar .navmenu .secondary-menu .menu li .login{
+.navbar .navmenu .secondary-menu .menu2.login{
     color: #000000;
 }
-.navbar .navmenu .secondary-menu .menu .signup{
+.navbar .navmenu .secondary-menu .menu2 .signup{
     background-color: #ffba33;
     padding: 10px 25px;
     color: #6a4029;
     border-radius: 100px;
     transition-duration: 50ms;
+    width: 100px;
 }
-.navbar .navmenu .secondary-menu .menu li .signup:hover{
+.navbar .navmenu .secondary-menu .menu2 .signup:hover{
     background-color: #6a4029;
     font-weight: 700;
     box-shadow: 1px 1px 10px #cccccc;
     color: white;
+    transform: scale(1.1);
 }
-.navbar .navmenu .secondary-menu .menu li:hover{
+.navbar .navmenu .secondary-menu .menu2 .login:hover{
     transform: scale(1.1);
 }
 
 
-@media  screen and (max-width: 1000px) {
+@media  screen and (max-width: 768px) {
 
     .navbar{
-        width: 100%;
-        padding-top: 15px;
-        padding-left: 0%;
-    }
-    .navbar .icon{
-        width: 100%;
-        margin-bottom: -10px;
         display: flex;
-        border-bottom: 2px solid   rgb(61, 59, 59);
+        border-bottom: 2px solid #eeeeee;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
-    .navbar .icon .logo {
-        width: 60%;
-        padding-left: 5%;
+    .navbar .container-fluid{
+        margin: 0;
+        padding: 0;
     }
-    .navbar .barmenu{
-        width: 40%;
-        margin-right: 7%;
+    .bar{
+        background-color: #ffba33 !important;
+        margin-right: 5%;
+    }
+    .bar .baricon{
+        color: #6a4029 !important;
+    }
+    .coffeelogo{
         display: flex;
-        justify-content: flex-end;
+        align-items: flex-start;
+        justify-content: flex-start;
+        cursor: pointer;
+        transition-duration: 50ms;
+        margin-left: 7%;
     }
-    .navbar .barmenu img{
-        display: block;
+    .coffeelogo:hover{
+        font-weight: 600;
+        transform: scale(1.1);
+    }
+    .coffeelogo img{
+        width: 25px;
+        height: 25px;
+    }
+    .coffeelogo h1{
+        font-size: 15px;
+        font-weight: 800;
+        position: relative;
+        left: 11px;
+        margin-top: 7px;
+        color: #6a4029 !important;
     }
     .navbar .navmenu{
-        display: none;
-    }
-    .navbar:hover .navmenu{
+        margin: 0;
+        padding: 0;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+        margin-top: 10px;
     }
     .navbar .navmenu .primary-menu{
-        width: 100%;
-        margin-right: 5%;
-        margin-top: -10px;
-    }
-    .navbar .navmenu .primary-menu .menu {
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin-left: 0;
         width: 100%;
         display: grid;
         align-items: center;
-        margin-left: -15px;
-        padding-left: 0;
         justify-self: start;
         grid-row-gap: 10px;
         grid-template-columns: 50% 50%;
         grid-template-rows: 30px 30px;
     }
-    .navbar .navmenu .primary-menu .menu li{
-        padding-left: 10px;
-        margin-top: 25px;
-    }
-    .navbar .navmenu .primary-menu .menu li:hover{
-        background-color: #ffba33;
+    .navbar .navmenu .primary-menu .menu1{
+        margin: 0;
+        font-size: 13px;
+        font-weight: 400;
+        color: #4f5665;
+        cursor: pointer;
         text-align: left;
         width: 100%;
-        height: 40px;
-        padding-top: 10px;
     }
-    .navbar .navmenu .secondary-menu{
-        width: 100%;
-        height: 50px;
-        margin-right: 20%;
-        justify-content: flex-start;
+    .navbar .navmenu .primary-menu .menu1:hover{
+        color: #6a4029;
+        font-weight: 700;
+        background-color: #ffba33;
     }
-    .navbar .navmenu .secondary-menu .menu{
-        margin-top: -10px;
+    .navbar .navmenu .primary-menu .menu1 a{
+        margin-left: 10px;
+    }
+    .navbar .navmenu .secondary-menu {
+        display: flex;
+        list-style-type: none;
+        margin-right: 5%;
+        flex-direction: row;
+        margin-left: 5%;
+        margin-top: 5px;
+    }
+    .navbar .navmenu .secondary-menu .menu2{
+        font-size: 13px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .navbar .navmenu .secondary-menu .menu2.login{
+        color: #000000;
+        text-decoration: none;
+    }
+    .navbar .navmenu .secondary-menu .menu2 .signup{
+        background-color: #ffba33;
+        padding: 10px 25px;
+        color: #6a4029;
+        border-radius: 100px;
+        transition-duration: 50ms;
+        width: 100px;
+        margin-left: 10px;
+    }
+    .navbar .navmenu .secondary-menu .menu2 .signup:hover{
+        background-color: #6a4029;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px #cccccc;
+        color: white;
+        transform: scale(1.1);
+    }
+    .navbar .navmenu .secondary-menu .menu2 .login:hover{
+        transform: scale(1.1);
     }
 }
