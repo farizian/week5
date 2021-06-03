@@ -7,9 +7,9 @@ body{
 }
 
 .jumbotron{
-    background-image: url(https://s3-alpha-sig.figma.com/img/57c5/d504/de26c540ca74fd712a0e636cd4cdc0fb?Expires=1621814400&Signature=fZMx8FNLoRZvg-DGi9MFekxJyW6PCk-QiA2kBDcOK0~rrYtN6I8o9bMEtPda5MhyhUbon5CnbzDqD41tbQtb50EpJeg9-WNYEYn1dzlnKsxeZoElib3GuVm76rw6wM9AMkZmEqnagWVKLzqeL8nnWFq8mZNX2uRZUix2QfaUj~Xtz6p3foXLfZreBOBOycrDjPVW--dY41JKos5er0jqgTKGOU0iz0tjVn4pTdVLy9Ev4~ZvSjvBQQ8zHFVZ4~P~WprtbgN~KzR3nuakXS8jOjbSa6y3mXPZmLJ4eav5YstgtWIdgtPQPqLdikBKuOPl63d8aslXcPS7cIls82feyA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+    background-image: url(https://raw.githubusercontent.com/farizian/week5/master/img/jumbotron.png);
     background-size: cover;
-    background-position-y: -890px ;
+    background-position-y: -610px ;
     height: 554px;
     font-family: rubik;
     color: white;
@@ -503,7 +503,10 @@ body{
 }
 
 @media screen and (max-width: 768px) {
-
+    .jumbotron{
+        background-position-x: -200px;
+        background-position-y: 2px;
+    }
     .jumbotron .left{
         width: 100%;
     }
@@ -629,14 +632,8 @@ body{
 }
 @media  screen and (max-width: 576px) {
     .jumbotron{
-        background-image: url(https://s3-alpha-sig.figma.com/img/57c5/d504/de26c540ca74fd712a0e636cd4cdc0fb?Expires=1621814400&Signature=fZMx8FNLoRZvg-DGi9MFekxJyW6PCk-QiA2kBDcOK0~rrYtN6I8o9bMEtPda5MhyhUbon5CnbzDqD41tbQtb50EpJeg9-WNYEYn1dzlnKsxeZoElib3GuVm76rw6wM9AMkZmEqnagWVKLzqeL8nnWFq8mZNX2uRZUix2QfaUj~Xtz6p3foXLfZreBOBOycrDjPVW--dY41JKos5er0jqgTKGOU0iz0tjVn4pTdVLy9Ev4~ZvSjvBQQ8zHFVZ4~P~WprtbgN~KzR3nuakXS8jOjbSa6y3mXPZmLJ4eav5YstgtWIdgtPQPqLdikBKuOPl63d8aslXcPS7cIls82feyA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
-        background-size: cover;
-        background-position-y: -890px ;
-        height: 554px;
-        font-family: rubik;
-        color: white;
-        width: 100%;
-        display: flex;
+        background-position-x: -200px;
+        background-position-y: 2px;
     }
     .jumbotron .left{
         width: 100%;

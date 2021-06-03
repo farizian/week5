@@ -62,7 +62,6 @@
 }
 .navbar .navmenu .secondary-menu {
     display: flex;
-    list-style-type: none;
     margin-left: 20%;
     margin-right: 5%;
 }
@@ -144,22 +143,14 @@
         margin: 0;
         padding: 0;
         width: 100%;
-        justify-content: center;
         margin-top: 10px;
         background-color: white;
     }
     .navbar .navmenu .primary-menu{
-        justify-content: center;
-        align-items: center;
         list-style-type: none;
         margin-left: 0;
         width: 100%;
-        display: grid;
-        align-items: center;
-        justify-self: start;
-        grid-row-gap: 10px;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 30px 30px;
+        display: flex;
     }
     .navbar .navmenu .primary-menu .menu1{
         margin: 0;
@@ -167,43 +158,46 @@
         font-weight: 400;
         color: #4f5665;
         cursor: pointer;
-        text-align: left;
+        text-align: center;
         width: 100%;
     }
     .navbar .navmenu .primary-menu .menu1:hover{
         color: #6a4029;
         font-weight: 700;
-        background-color: #ffba33;
     }
     .navbar .navmenu .primary-menu .menu1 a{
         margin-left: 10px;
     }
     .navbar .navmenu .secondary-menu {
         display: flex;
-        list-style-type: none;
-        margin-right: 5%;
-        flex-direction: row;
-        margin-left: 5%;
+        flex-direction: column;
         margin-top: 5px;
+        margin-left: 5%;
     }
     .navbar .navmenu .secondary-menu .menu2{
         font-size: 13px;
         cursor: pointer;
         text-decoration: none;
         font-weight: 600;
+        margin: 0 0 10px 0;
     }
-    .navbar .navmenu .secondary-menu .menu2.login{
+    .navbar .navmenu .secondary-menu .menu2 .login{
         color: #000000;
-        text-decoration: none;
+        padding: 0;
+        text-align: center;
+        border-radius: 100px;
+        border: 2px solid #ffba33;
+        height: 26px;
     }
     .navbar .navmenu .secondary-menu .menu2 .signup{
         background-color: #ffba33;
-        padding: 10px 25px;
+        padding: 0;
+        height: 22px;
         color: #6a4029;
         border-radius: 100px;
         transition-duration: 50ms;
-        width: 100px;
-        margin-left: 10px;
+        width: 100%;
+        text-align: center;
     }
     .navbar .navmenu .secondary-menu .menu2 .signup:hover{
         background-color: #6a4029;

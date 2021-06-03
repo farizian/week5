@@ -145,7 +145,6 @@ body{
 }
 @media screen and (max-width: 768px){
     .navbar{
-        display: flex;
         border-bottom: 2px solid #eeeeee;
         width: 100%;
         margin: 0;
@@ -192,21 +191,14 @@ body{
         margin: 0;
         padding: 0;
         width: 100%;
-        justify-content: center;
         margin-top: 10px;
+        background-color: white;
     }
     .navbar .navmenu .primary-menu{
-        justify-content: center;
-        align-items: center;
         list-style-type: none;
         margin-left: 0;
         width: 100%;
-        display: grid;
-        align-items: center;
-        justify-self: start;
-        grid-row-gap: 10px;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 30px 30px;
+        display: flex;
     }
     .navbar .navmenu .primary-menu .menu1{
         margin: 0;
@@ -214,13 +206,15 @@ body{
         font-weight: 400;
         color: #4f5665;
         cursor: pointer;
-        text-align: left;
+        text-align: center;
         width: 100%;
     }
     .navbar .navmenu .primary-menu .menu1:hover{
         color: #6a4029;
         font-weight: 700;
-        background-color: #ffba33;
+    }
+    .navbar .navmenu .primary-menu .menu1 a{
+        margin-left: 10px;
     }
     .navbar .navmenu .primary-menu .menu1 a{
         margin-left: 50px;
