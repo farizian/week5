@@ -150,7 +150,7 @@ main aside .terms ol li{
         flex-direction: column;
         align-items: center;
         width: 90%;
-        height: 100px;
+        height: 200px;
         padding: 10px 10px 0 10px;
         overflow: scroll;
     }
@@ -170,8 +170,8 @@ main aside .terms ol li{
     }
     main aside .content .promo .prmcard .image{
         width: 25%;
-        height: 85px;
-        margin-top: -15px;
+        height: 80px;
+        margin-top: -10px;
     }
     main aside .content .promo .prmcard .title{
         display: flex;
